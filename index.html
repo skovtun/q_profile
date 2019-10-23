@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Quotit - Profile Page</title>
+    <meta name="description" content="Test exercise for Quotit Company by Sergey Kovtun 10/12/2019." />
+    <meta http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,600,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type= "text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="i/quotit-white.svg" width="180" height="70" class="d-inline-block align-top" alt="Quotit" />
+        </a>
+      </div>
+    </nav>
+
+    <div class="container-fluid content">
+      <h1 class="p__title">Customer Profile</h1>
+      <div class="row">
+        <div class="col-12 col-md-2 center">
+          <img class="avatar" src="i/avatar.png" />
+        </div>
+        <div class="col-12 col-md-10">
+          <div class="user__id">ID: 969709</div>
+          <div class="user__name">Mark Freedman</div>
+
+          <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-customer-tab" data-toggle="pill" href="#pills-customer" role="tab" aria-controls="pills-customer" aria-selected="true">Customer Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-family-tab" data-toggle="pill" href="#pills-family" role="tab" aria-controls="pills-family" aria-selected="false">Family Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-policies-tab" data-toggle="pill" href="#pills-policies" role="tab" aria-controls="pills-policies" aria-selected="false">Policies</a>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="pills-tabContent">
+
+            <div class="tab-pane fade show active list_blocks" id="pills-customer" role="tabpanel" aria-labelledby="pills-customer-tab">
+              <div class="row">
+                <div class="col-6 col-md-4 item__title">Date of Birth</div>
+                <div class="col-6 col-md-8">02/17/1993</div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="item__title">Phone Numbers</div>
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="item__subtitle">Home</div>
+                      <div class="item__phone"><a href="tel:#">(949) 222-3344</a></div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="item__subtitle">Cell</div>
+                      <div class="item__phone"><a href="tel:#">(949) 123-5678</a></div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="item__subtitle">Office</div>
+                      <div class="item__phone"><a href="tel:#">(949) 323-6567</a></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 col-md-4 item__title">Best time to call</div>
+                    <div class="col-6 col-md-8">10 AM - 3 PM</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-md-4 item__title">Email</div>
+                <div class="col-6 col-md-8"><a href="mailto:#">name@domain.com</a></div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-md-4 item__title">Address</div>
+                <div class="col-6 col-md-8">14576 Somestreet, Apt. 25, Towncity, CA 92333</div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-family" role="tabpanel" aria-labelledby="pills-family-tab">
+              <div class="accordion" id="accordionFamily">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Augusta Freedman
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse collapsed" aria-labelledby="headingOne" item-parent="#accordionFamily">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-6 col-md-4 item__title">Gender</div>
+                        <div class="col-6 col-md-8">Female</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 col-md-4 item__title">Date of Birth</div>
+                        <div class="col-6 col-md-8">07/12/1995 - 24 y.o.</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 col-md-4 item__title">ZIP</div>
+                        <div class="col-6 col-md-8">92333</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Paul Freedman
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" item-parent="#accordionFamily">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-6 col-md-4 item__title">Gender</div>
+                        <div class="col-6 col-md-8">Male</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 col-md-4 item__title">Date of Birth</div>
+                        <div class="col-6 col-md-8">08/05/2016 - 3 y.o.</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 col-md-4 item__title">ZIP</div>
+                        <div class="col-6 col-md-8">92333</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Anna Freedman
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" item-parent="#accordionFamily">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-6 col-md-4 item__title">Gender</div>
+                        <div class="col-6 col-md-8">Female</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 col-md-4 item__title">Date of Birth</div>
+                        <div class="col-6 col-md-8">04/27/2018 - 1 y.o.</div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 col-md-4 item__title">ZIP</div>
+                        <div class="col-6 col-md-8">92333</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade list_blocks" id="pills-policies" role="tabpanel" aria-labelledby="pills-policies-tab">
+              <div class="row">
+                <div class="col-6 col-md-4 item__title">Policy Type</div>
+                <div class="col-6 col-md-8">Policy Type</div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-md-4 item__title">Agent ID</div>
+                <div class="col-6 col-md-8">707897</div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-md-4 item__title">Purchase Date</div>
+                <div class="col-6 col-md-8">04/30/2019</div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-md-4 item__title">Validity Period</div>
+                <div class="col-6 col-md-8">05/02/2019 - 05/01/2020</div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-md-4 item__title">Members Covered Under Policy</div>
+                <div class="col-6 col-md-8 nolist">
+                  <ul>
+                    <li><a href="#">Augusta Freedman</a></li>
+                    <li><a href="#">Paul Freedman</a></li>
+                    <li><a href="#">Anna Freedman</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer navbar-fixed-bottom">
+      <div class="container center">
+        Test exercise for Quotit Company by Sergei Kovtun 10/12/2019.
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #333;
+  height:100%;
+}
+a, a:hover {
+  color: #0075c9;
+}
+.p__title {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding:16px 0;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  -moz-border-radius: 100%; /* Firefox */
+  -webkit-border-radius: 100%; /* Safari, Chrome */
+  -khtml-border-radius: 100%; /* KHTML */
+  border-radius: 100%;
+}
+.center {
+  text-align:center;
+}
+.user__id{
+  color: #878787;
+}
+.user__name {
+  font-family: 'Roboto Slab';
+  font-size: 2.5em;
+  font-weight: 600;
+}
+.item__phone {
+  font-size: 1.3em;
+  font-weight: 900;
+}
+.item__title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.item__subtitle {
+  color: #878787;
+}
+.list_blocks>.row {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,117,201,0.2);
+  margin: 8px 0;
+}
+.nolist ul {
+  margin: 0;
+  padding: 0 0 0 17px;
+}
+
+.content {
+  padding-bottom:60px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  line-height: 60px;
+  background-color: #f5f5f5;
+  color:#878787;
+}
+
+/* Bootstrap Restyling */
+
+.container-fluid {
+  max-width: 1200px;
+}
+.row {
+  padding: 12px 0;
+}
+.nav {
+  border-bottom: 1px solid #0075c9;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #0075c9;
+  background: none;
+  border-bottom: 3px solid #0075c9;
+}
+.nav-pills .nav-link {border-radius: 0;}
+
+.btn-link {
+  font-size: 18px;
+  font-weight: 100;
+  color:#0075c9;
+  padding: 0;
+}
+
+.accordion>.card, .accordion>.card:first-of-type, .accordion>.card:last-of-type {
+  border: 0;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,117,201,0.2);
+  margin: 8px 0;
+}
+.card-header {
+  padding:8px 16px 16px;
+  border:0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .user__id, .user__name {
+    text-align: center;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
